@@ -1,0 +1,38 @@
+* {
+  color: white;
+  font-family: arial;
+  }
+ /* this applies the colour white to every element in the html doc */
+
+ body{
+   background-color: #696969;
+ }
+
+header {
+    text-align: center;
+}
+
+.navigation-menu li, a:link{
+  list-style: none;
+  display: inline; /* this makes the list run horizontally rather than vertically */
+  background-color: #C0C0C0;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+} /* this is a class - which can be re-used again */
+
+.navigation-menu li, a:hover, a:active{
+  background-color: #DCDCDC;
+}
+
+#progress-tracker{
+  font-size: 40px;
+  color: #FFD700;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.progress-header{
+  padding-top: 30px;
+}

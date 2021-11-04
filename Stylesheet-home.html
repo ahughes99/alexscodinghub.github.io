@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<!-- this document is to display:
+
+colour schemes - fonts - text styles (headings etc.)
+
+examples:
+- https://www.lightningdesignsystem.com/utilities/text/
+- https://material.io/design
+- https://getbootstrap.com/
+
+-->
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+<!-- Top section of the website -->
+    <header class="top-container">
+        <h1><a class="home-link" href="Alexs Coding Hub.html">Alex's Coding Hub</a></h1>
+<!-- Navigation Menu -->
+      <nav>
+        <ul class="navigation-menu">
+          <li><a id="nav-button" href="https://www.codecademy.com/learn" target=_blank>Codeacademy Home</a></li>
+          <li><a id="nav-button" href="https://github.com/ahughes99" target=_blank>Github</a></li>
+          <li><a id="nav-button" href="https://www.codecademy.com/resources/cheatsheets/all" target=_blank>Cheat Sheets</a></li>
+          <li><a id="nav-button-active" href="Stylesheet-home.html">Design System</a></li>
+        </ul>
+      </nav>
+    </header>
+<!-- body -->
+    <body>
+      <h2>Design System (Stylesheet)</h2>
+      <h3>Quick Navigation</h3>
+
+      <!-- Design System Elements -->
+      <table class= "sub-navigation">
+
+        <tr class="image-button-label">
+          <th>Colour Scheme</th>
+          <th>Fonts</th>
+          <th>Text Styles/ Structures</th>
+        </tr>
+
+        <tr>
+          <td><a href= #colour-scheme-anchor><img class="img-navigation" src="Resources/Colour-Schemes.jpg"></a></td>
+          <td><a href= #fonts-anchor><img class="img-navigation" src="Resources/Fonts.jpg"></td>
+          <td><a href= #text-structures-styles-anchor><img class="img-navigation" src="Resources/Text-Structures.jpg"></td>
+        </tr>
+      </table>
+
+      <!-- Colour Scheme Section -->
+      <h3 id="colour-scheme-anchor">Colour Schemes</h3>
+      <p>Colour Schemes that are to be used on the site are monochromatic with a focus on blacks, greys and whites.</p>
+
+      <table class= "stylesheet-table">
+
+        <tr>
+          <th>Colour Example</th>
+          <th>Hex Value</th>
+          <th>Usage</th>
+        </tr>
+
+        <tr>
+          <td id="header-background"></td>
+          <td>#56585C</td>
+          <td>For use on the background of the header section</td>
+        </tr>
+
+        <tr>
+          <td id="navigation-buttons"></td>
+          <td>#BFCDE1</td>
+          <td>For use on the main navigation menu buttons</td>
+        </tr>
+
+        <tr>
+          <td id="body-background"></td>
+          <td>#CED3DB</td>
+          <td>For use on the background of the body section</td>
+        </tr>
+
+      </table>
+
+      <!-- Fonts Section -->
+      <h3 id="fonts-anchor">Fonts</h3>
+      <p>Font is standardised throughout the webpage, with only a primary and a back up font used keep the style of the webpage minimal and consistent</p>
+
+      <table class= "stylesheet-table">
+
+        <tr>
+          <th>Font Family</th>
+          <th>Link to source</th>
+          <th>Usage</th>
+        </tr>
+
+        <tr>
+          <td id="philosopher-font">Philosopher</td>
+          <td><a class="font-link" href="https://fonts.google.com/specimen/Philosopher?query=philosopher" target=_blank> https://fonts.google.com/specimen/Philosopher?query=philosopher</a></td>
+          <td>Used for every piece of text on the webpage, nuances are documented in the Text Styles/ Structures Section</td>
+        </tr>
+
+        <tr>
+          <td id="sans-serif-font">Sans Serif Font</td>
+          <td>N/A</td>
+          <td>Back up font in case 'Philosopher' does not work.</td>
+        </tr>
+
+
+      </table>
+
+      <!-- Text Structures/ Styles section -->
+      <h3 id="text-structures-styles-anchor">Text Structures/ Styles</h3>
+      <p>Sizes, styles and uses of the different text elements throughout the website</p>
+
+      <table class= "stylesheet-table-css">
+
+        <tr>
+          <th>Element</th>
+          <th>CSS</th>
+          <th>Usage</th>
+          <th>Example</th>
+        </tr>
+
+        <tr>
+          <td class="css-element">h1</td>
+          <td class="css"><a class=element-css> <!-- this class makes h1 red -->h1</a> {<br><br>&emsp;&emsp;&emsp;<a class="properties-css">font-family</a>: <a class="value-css">'Philosopher'</a>, <a class="secondary-value-css">sans-serif</a>;<br>
+          &emsp;&emsp;&emsp;<!-- this provides 4 point spacing (repeated 3 times to replicate a 'tab --><a class="properties-css">font-size</a>: <a class="value-css">64px</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">text-align</a>: <a class="value-css">center</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">color</a>: <a class="value-css">white</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">padding-top</a>: <a class="value-css">20px</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">padding-bottom</a>: <a class="value-css">40px</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">text-decoration</a>: <a class="value-css">none</a>;<br><br>
+          }<br>
+          </td>
+          <td>To be used for the website title and only for the website title</td>
+          <td><h1>This is a h1 element</h1></td>
+        </tr>
+
+        <tr>
+          <td class="css-element">h2</td>
+          <td class="css"><a class="element-css">h2</a> {<br><br>
+            &emsp;&emsp;&emsp;<a class="properties-css">font-family</a>: <a class="value-css">'Philosopher'</a>, <a class="secondary-value-css">sans-serif</a>;<br>
+            &emsp;&emsp;&emsp;<a class="properties-css">font-size</a>: <a class="value-css">50px</a>;<br>
+            &emsp;&emsp;&emsp;<a class="properties-css">text-align</a>: <a class="value-css">center</a>;<br>
+            &emsp;&emsp;&emsp;<a class="properties-css">padding-top</a>: <a class="value-css">30px</a>;<br>
+            &emsp;&emsp;&emsp;<a class="properties-css">font-weight</a>: <a class="value-css">bold</a>;<br><br>
+          }</td>
+          <td>To be used for any main subheaders within the body of the website</td>
+          <td><h2>This as a h2 element</h2></td>
+        </tr>
+
+        <tr>
+          <td class="css-element">h3</td>
+          <td class="css"><a class=element-css> <!-- this class makes h1 red -->h1</a> {<br><br>&emsp;&emsp;&emsp;<a class="properties-css">font-family</a>: <a class="value-css">'Philosopher'</a>, <a class="secondary-value-css">sans-serif</a>;<br>
+          &emsp;&emsp;&emsp;<!-- this provides 4 point spacing (repeated 3 times to replicate a 'tab --><a class="properties-css">font-size</a>: <a class="value-css">40px</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">text-align</a>: <a class="value-css">center</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">color</a>: <a class="value-css">#56585C</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">padding-top</a>: <a class="value-css">50px</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">padding-bottom</a>: <a class="value-css">25px</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">font-weight</a>: <a class="value-css">bold</a>;<br><br>
+          }<br>
+          </td>
+          <td>To be used for non-main subheaders and table headings</td>
+          <td><h3>This is a h3 element</h3></td>
+        </tr>
+
+        <tr>
+          <td class="css-element">p</td>
+          <td class="css"><a class=element-css> <!-- this class makes h1 red -->p</a> {<br><br>&emsp;&emsp;&emsp;<a class="properties-css">font-family</a>: <a class="value-css">'Philosopher'</a>, <a class="secondary-value-css">sans-serif</a>;<br>
+          &emsp;&emsp;&emsp;<!-- this provides 4 point spacing (repeated 3 times to replicate a 'tab --><a class="properties-css">font-size</a>: <a class="value-css">16px</a>;<br>
+          &emsp;&emsp;&emsp;<a class="properties-css">text-align</a>: <a class="value-css">center</a>;<br><br>
+          }<br>
+          </td>
+          <td>To be used for any non heading text on the webpage</td>
+          <td><p>This is a p element</p></td>
+        </tr>
+
+      </table>
+
+    </body>
+
+</html>

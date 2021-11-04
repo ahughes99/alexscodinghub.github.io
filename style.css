@@ -1,0 +1,355 @@
+*{
+  margin: 0 auto;
+}
+
+/*--------------------
+
+ TITLE AND HEADING CONTAINER
+
+ ---------------------*/
+
+/* Setting the format of the top title */
+h1{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 64px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-decoration: none;
+}
+/* Sets the background colour of the container that contains the main title and nav bar */
+header{
+  background-color: #56585C;
+  margin: 0 auto;
+  outline: none;
+  padding: 20px;
+}
+
+.home-link:visited{
+  color: white;
+}
+
+.home-link:hover{
+  opacity: 50%;
+  transition: opacity 1s;
+}
+
+/* ----------------------
+
+ NAVIGATION BAR
+
+ ------------------------*/
+
+/* Sets the nav bar to be center aligned */
+nav ul{
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+}
+/* Sets the formatting for the individual buttons in the nav bar */
+#nav-button{
+  text-decoration: none;
+  color: black;
+}
+
+#nav-button-active{
+  opacity: 50%;
+  text-decoration: none;
+  color: black;
+}
+
+
+.navigation-menu li{
+  font-family: 'Philosopher', sans-serif;
+  display: inline;
+  background-color: #BFCDE1;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  color: black;
+  border-radius: 10px;
+  text-decoraton: !none;
+  transition: padding 0.5s;
+}
+
+nav li:hover{
+  background-color: #E0E5EE;
+  padding: 12px;
+  text-decoration: none;
+  color: red;
+  transition: padding 0.5s;
+}
+
+nav li:visited{
+  text-decoration: none;
+  opacity: 50%;
+}
+
+nav li:active{
+  opacity: 50%;
+}
+
+/*--------------------
+SUB-NAVIGATION
+---------------------*/
+.sub-navigation{
+  display:flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.sub-navigation li{
+  padding: 10px;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  drop-shadow: 10px;
+}
+/*--------------------
+IMAGE-NAVIGATION (STYLESHEET PAGE)
+---------------------*/
+.img-navigation{
+  width:300px;
+  height:150px;
+  transition: width 1s, height 1s, opacity 1s;
+}
+
+.img-navigation:hover{
+  width:320px;
+  height:160px;
+  opacity:75%;
+  transition: width 1s, height 1s, opacity 1s;
+}
+
+.image-button-label{
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 28px;
+  color: black;
+  position: inline;
+  text-decoration: none;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+/*--------------------
+
+ MAIN BODY
+
+ ---------------------*/
+
+body{
+  background-color: #CED3DB;
+  margin: 10 auto;
+}
+
+h2{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+h3{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  font-weight: bold;
+  color: #56585C;
+}
+
+p{
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* below is an anchor that allows the nav buttons to jump to the colour scheme part of the page */
+#colour-scheme-anchor{
+  margin-top: 100px;
+}
+
+/*-------------------
+
+ Progress Bar
+
+ --------------------*/
+
+ #percentage{
+   font-family: 'Philosopher', sans-serif;
+   font-size: 32px;
+   background-color: #3B475C;
+   text-align: center;
+   color: white;
+   padding: 25px;
+   width: 100px;
+   margin-top: 30px;
+   border-radius: 40px;
+   transition: opacity 3s;
+ }
+
+ #percentage:hover{
+   opacity: 0%;
+   cursor: pointer;
+   transition: opacity 3s;
+ }
+
+ #percentage-link{
+   text-decoration: none;
+   color: white;
+ }
+
+.progress-bar{
+  margin-top: 30px;
+  background-color: #284475;
+  width: 1000px;
+  height:24px;
+  border-radius: 15px;
+}
+
+.progress-complete{
+  background-color: #7C96C2;
+  width: 15%; /* This changes the progress bar to represent the % shown on the home page */
+  height:24px;
+  float: left;
+  font-family: 'Philosopher', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  transition: background-color 3s, width 3s;
+  border-radius: 15px;
+}
+.progress-complete:hover{
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  background-color: #A6BF4B;
+  transition: background-color 3s, width 3s;
+}
+
+/*--------------------------
+COLOUR SCHEMES SECTION
+---------------------------*/
+
+.stylesheet-table{
+  width: 1000px;
+  height: auto;
+  margin: 50px auto;
+  border-spacing: 30px 10px;
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 16px;
+}
+
+.stylesheet-table th{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 28px;
+}
+
+.stylesheet-table td{
+  width: 100px;
+  height: 100px;
+}
+
+#header-background{
+  background-color: #56585C;
+  border: solid 1px black;
+  border-opacity: 60%;
+}
+
+#navigation-buttons{
+  background-color: #BFCDE1;
+  border: solid 1px black;
+  border-opacity: 60%;
+}
+
+#body-background{
+  background-color: #CED3DB;
+  border: solid 1px black;
+  border-opacity: 60%;
+}
+
+/*--------------------------
+FONT SECTION
+---------------------------*/
+
+#philosopher-font{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.font-link:link, :visited{
+  text-decoration: none;
+  color: black;
+}
+
+.font-link:hover{
+  opacity: 50%;
+}
+
+#sans-serif-font{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: underline;;
+}
+
+/*--------------------------
+TEXT STRUCTURES/ STYLES SECTION
+---------------------------*/
+.stylesheet-table-css{
+  border-spacing: 30px 10px;
+  width: auto;
+  height: auto;
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 16px;
+}
+
+.stylesheet-table-css th{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 28px;
+}
+
+.stylesheet-table-css td{
+  width: 350px;
+  height: 100px;
+}
+
+.css-element{
+  font-size: 30px;
+}
+
+.css{
+  text-align: left;
+}
+
+.element-css{
+  color: #812F33;
+}
+
+.properties-css{
+  color: #CF4A51;
+}
+
+.value-css{
+  color: #225F82;
+}
+
+.secondary-value-css{
+  color: #42821B;
+}
